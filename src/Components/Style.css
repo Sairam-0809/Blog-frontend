@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.parentContainer{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.child-compo-left{
+    color : black ;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px auto;
+    box-shadow: 2px 2px 2px;
+}
+.child-compo-right{
+    color : black ;
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px auto;
+    box-shadow: 2px 2px 2px;
+
+}
+.imageLatest-left{
+    float: left;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+}
+.imageLatest{
+    float: left;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+hr{
+    width: 80%;
+    align-items: center;
+}
+.advertisement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+a{
+    color: black;
+}
+.latest-news{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.news-head{
+    text-decoration: underline red 2px;
+}
+.adv-image{
+    width: 350px;
+    height: 500px;
+}
+.latest-news-desp{
+    font-size: 15px;
+}
+/* .imageLatest-right{
+    width: ;
+} */
+.latest-news-head-right{
+    font-size: 15px;
+}
+@media screen and (max-width: 950px) and (min-width:551px){
+    .parentContainer{
+        display: flex;
+        /* grid-template-columns: 60% 40%; */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .latest-news-head{
+        font-size: 15px;
+    }
+    .latest-news-desp{
+        font-size: 10px;
+    }
+    .adv-image{
+        width: 200px;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 550px) and (min-width:300px) {
+    .parentContainer{
+        display: flex;
+        /* grid-template-columns: 60% 40%; */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .imageLatest{
+        float: left;
+        clear: both;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        margin-right: 0px;
+    }
+    .child-compo-left{
+        color : black ;
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 30px auto;
+        font-size: 15px;
+    }
+    .child-compo-right{
+        color : black ;
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 30px auto;
+        font-size: 15px;
+    }
+}

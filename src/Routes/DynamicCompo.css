@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .parent-container{
+    width: 100%;
+} */
+.icons-parent{
+    width: 25%;
+    position: sticky;
+    top: 500px;
+    /* float: left; */
+}
+.dynamic-parent{
+    width: 50%;
+    margin: 1px auto;
+    box-shadow: 2px 2px 5px ;
+}
+.icons{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.article-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 80% ;
+}
+.profile-parent{
+    width: 100%;
+    margin: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.socialMedia{
+    display: flex;
+    justify-content: space-evenly;
+}
+.socialMedia a {
+    text-decoration: none;
+    margin: 0 10px;
+} 
+.socialMedia a:hover {
+    background-color: silver;
+    text-decoration: underline;
+    border-radius: 50px;
+    padding: 5px;
+}
+.heading{
+    margin: 35px;
+    font-size: 30px;
+    font-style: oblique;
+}
+.description{
+    margin:20px 50px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.counting{
+    margin-left: 50px;
+}
+.back-button{
+    margin: 50px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.back{
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #adb5bd;
+    z-index: 1;
+}
+.back:hover:after {
+    width: 100%;
+    left: 0;
+}
+.back:after {
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+    background-color: #ced4da;
+    right: 0;
+}
+.back:active{
+    top: 2px;
+}
+
+.back-home{
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #d90429;
+    background: #d90429;
+}
+.back-home:hover {
+    background: #fff;
+    color: #d90429
+}
+
+.top-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    z-index: 2;
+}
+.bolly-top{
+    display: flex;
+    justify-content: flex-start;
+    /* flex-direction: row; */
+}
+.child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icons-heart:hover{
+    color: #d90429;
+}
+@media screen and (max-width: 600px) and (min-width:300px){
+    .dynamic-parent{
+        width: 100%;
+        margin: 50px auto;
+        /* box-shadow: 2px 2px 5px ; */
+    }
+    .profile-parent{
+        width: 100%;
+        margin: 10px 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 30px; */
+    }
+    .heading{
+        margin: 0px;
+    }
+    .icons-parent{
+        display: none;
+    }
+    .top-parent{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    /* .blog-image{
+        width: 100%;
+    } */
+    .bolly-top{
+        width: 100%;
+        margin: 1px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-direction: row; */
+    }
+    .child{
+        width: 80%;
+        /* margin: 2px auto; */
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        font-size: 10px;
+        gap: 10px;
+    }
+    .description{
+        font-size: 15px;
+    }
+    .blog-image{
+        width: 100%;
+        height: 100px;
+    }
+}
+  

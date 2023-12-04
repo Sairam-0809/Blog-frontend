@@ -1,0 +1,98 @@
+
+
+.footer {
+    background-color: lightslategray;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    bottom: -100;
+    width: 100%;
+    position: sticky;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.companyName {
+    font-weight: bold;
+}
+.compLink{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.compLink:hover{
+    color: chartreuse;
+}
+.socialMedia a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+} 
+.socialMedia a:hover {
+    text-decoration: underline;
+}
+.appLinks {
+  margin-top: 10px;
+}
+.appLinks a{
+    color: white;
+}
+.appIcons{
+    display: flex;
+    justify-content: space-around;
+
+} 
+.subscribe {
+    margin-top: 20px;
+}
+  
+.subscribe input {
+    padding: 5px;
+    margin-right: 10px;
+}
+  
+.subscribe button {
+    padding: 5px 10px;
+    background-color: yellowgreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+.subscribe button:hover {
+    background-color: lightgreen;
+}
+  
+.footerLinks {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+  
+.footerLinks a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+  
+.footerLinks a:hover {
+    text-decoration: underline;
+    color: red;
+}
+.copyright{
+    bottom: 1;
+}
+
+@media screen and (max-width: 600px) and (min-width:300px){
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
